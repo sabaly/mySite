@@ -1,0 +1,234 @@
+#great-container {
+	width: 100%;
+	height: 100vh;
+	background: url("../../img/bg-m.jpg") center center;
+} 
+
+
+#great-container:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.portfolio {
+	background: rgba(255, 255, 255, 0.2);
+	display: grid;
+	align-content: center;
+}
+
+.portfolio h1 {
+	position: fixed;
+	top: 20px;
+	left: 10px;
+	font-size: 50px;
+	color: #fff;
+	animation: fadeIn 4s forwards 1;
+}
+
+.portfolio h1 small {
+	font-size: 20px;
+	position: fixed;
+	top: 75px;
+	left: 20px;
+}
+
+.portfolio .dev {
+	position: relative;
+	left: 5%;
+}
+
+.portfolio .dev h4 {
+	color: #fff;
+	animation: popup 1.2s forwards 1;
+}
+
+
+
+/*   CODE */
+.portfolio .dev code {
+	color: #fff;
+	font-size: 25px;
+	animation: popup 1.2s forwards 1;
+}
+
+@keyframes popup{
+	0%, 50%{ transform: scale(1.5);}
+	50%, 60% { transform: scale(0.5);}
+	100% {transform: scale(1); }
+}
+
+.string { color: #00df00; }
+.this { color: rgba(255, 0, 0, 0.7); }
+.function-definition {
+	padding: 20px;
+	padding-left: 50px;
+}
+
+
+@media (max-width: 768px ) {
+	.portfolio h1 {
+		font-size: 35px;
+	}
+
+	.portfolio h1 small{
+		font-size: 15px;
+		top: 55px;
+	}
+
+	.portfolio {
+		height: 40vh;
+		width: 100%;
+	}
+	.portfolio .dev {
+		left: 0;
+		top: 25px;
+	}
+
+	.portfolio .dev h2 {
+		font-size: 55px;
+	}
+
+	.portfolio .dev code {
+		font-size: 15px;
+	}
+}
+/*---------------------------------------------------------*/
+/*                     Menu-links                          */
+.menu-links {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	width: 100%;
+	height: 25vh;
+	color: #fff;
+	border: 1px solid #fff;
+	position: relative;
+	animation: slideDown 1.2s forwards 1;
+}
+
+@keyframes slideDown {
+	0% { top: -100px; }
+	100% { top: 0px; }
+}
+
+.menu, .links {
+	flex: 1;
+	padding: 10px;
+}
+
+.links i{
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+	float: right;
+	margin-left: 5px;
+}
+
+.links i:hover {
+	transition: 0.3s;
+	color: #000;
+	background: #fff;
+}
+
+.menu *, .links * {
+	animation: fadeIn 1.2s forwards 1;
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@media (max-width: 768px ) {
+	.menu-links {
+		border-right: none;
+		flex-direction: column;
+	}
+}
+
+
+
+/*---------------------------------------------------------*/
+/*                     hire-me                             */
+.hire-me {
+	width: 100%;
+	height: 75vh;
+	padding: 10px;
+}
+
+.hire-btn{
+	display: grid;
+	align-content: center;
+	margin-bottom: 5px;
+	animation: fadeIn 2s forwards 1;
+}
+
+.hire-btn button{
+	border: 1px solid #00df00;
+	color: #00df00;
+}
+
+.hire-btn button:hover {
+	transition: 0.3s;
+	color: #fff;
+	background: #00df00;
+}
+
+.about-me {
+	border-top: 1px solid #fff;
+	height: 67vh;
+	width: 100%;
+	background: url("../../img/sabaly2.jpg") center center;
+	position: relative;
+	animation: slideUp 1.2s forwards 1;
+}
+
+@keyframes slideUp {
+	0% { top: 100px; }
+	100% { top: 0px; }
+}
+
+.alert-zone {
+	display: flex;
+	align-content: space-around;
+	flex-direction: column;
+	width: 100%;
+	height: 72vh;
+	border-left: 1px solid #fff;
+	color: #fff;
+	font-size: 30px;
+	animation: slideUp 1.2s forwards 1;
+}
+
+.positifs {
+	color: #00df00;
+}
+
+.negatifs {
+	color: rgba(255, 0, 0, 0.7);
+}
+
+.positifs p, .negatifs p {
+	padding: 10px;
+	padding-left: 30px;
+	font-size: 20px;
+} 
+
+@media (max-width: 768px ){
+	.right-side  {
+		background: #000;
+		width: 100%;
+	}
+
+	.hire-me {
+	}
+	.about-me {
+		width: 100%;
+	}
+}
+

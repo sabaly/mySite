@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>S@dmin - Portfolio</title>
+
+	<meta charset="utf-8">
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+	<!--
+		Vendor
+	-->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/icofont/icofont.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+
+	<script type="text/javascript">
+		!(function($) {
+			
+			/*
+				create flag animation
+			*/
+			let flag = $('<div/>', {
+				class: 'flag'
+			});
+
+			$('<div/>', {
+				class: 'bande-verte'
+			}).appendTo(flag);
+
+			let jaune = $('<div/>', {
+				class: 'bande-jaune'
+			}).appendTo(flag);
+
+			$('<i/>', {
+				class: 'icofont-star etoile'
+			}).appendTo(jaune);
+
+			$('<div/>', {
+				class: 'bande-rouge'
+			}).appendTo(flag);
+
+			
+			$('body').append(flag);
+			
+
+			setTimeout(function() {
+				location.replace("./home.html");
+			}, 4000);
+
+		})(jQuery);
+	</script>
+</body>
+</html>

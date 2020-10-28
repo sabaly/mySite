@@ -1,0 +1,107 @@
+.flag {
+	display: flex;
+	text-align: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 100%;
+	animation: flag-desappear 10s forwards 1;
+}
+
+@keyframes flag-desappear {
+	0%, 50% {
+		transform: rotate(0deg) skewY(0deg) scale(1);
+	}
+
+	70%, 100% {
+		transform: rotate(180deg) skewY(10deg) scale(0);
+	}
+}
+
+
+.bande-verte, .bande-jaune, .bande-rouge {
+	height: 100vh;
+}
+
+.bande-verte {
+	background: #00932C;
+	position: relative;
+	width: 32%;
+	animation: bandes 900ms forwards;
+}
+
+
+
+
+.bande-jaune {
+	background: #FFDB30;
+	position: relative;
+	width: 36%;
+	display: grid;
+	align-content: center;
+	animation: bandes 900ms forwards;
+}
+
+
+.etoile {
+	font-size: 100px;
+	color: #00932C;
+	animation: star 2s forwards infinite;
+}
+
+@keyframes star {
+	0% {transform: scale(1) rotate(180deg);}
+	10%, 20% {transform: scale(1.5) rotate(-180deg);}
+	20%, 30% {transform: scale(1) rotate(180deg);}
+	30%, 40% {transform: scale(1.5) rotate(-180deg);}
+	40%, 50% {transform: scale(1) rotate(180deg);}
+}
+
+.bande-rouge {
+	background: red;
+	position: relative;
+	width: 32%;
+	animation: bandes 900ms forwards;
+}
+@keyframes bandes {
+	0% { opacity: 0;}
+
+	100% {opacity: 1; }
+}
+
+/*
+		banner
+*/
+header {
+	height: 15vh;
+	display: flex;
+	align-content: space-around;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	color: #00df00;
+}
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+}
+
+.image {
+	flex: 1;
+	width: 40%;
+}
+
+.describe {
+	width: 60%;
+}
+
+.banner img {
+	width: 300px;
+	height: 300px;
+}
+

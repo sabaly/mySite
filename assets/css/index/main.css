@@ -31,6 +31,7 @@
 	animation: fadeIn 4s forwards 1;
 }
 
+
 .portfolio h1 small {
 	font-size: 20px;
 	position: fixed;
@@ -73,16 +74,21 @@
 
 @media (max-width: 768px ) {
 	.portfolio h1 {
+		position: absolute;
+		top: 20px;
+		left: 10px;
 		font-size: 35px;
 	}
 
 	.portfolio h1 small{
+		position: absolute;
 		font-size: 15px;
-		top: 55px;
+		top: 35px;
+		left: 40px;
 	}
 
 	.portfolio {
-		height: 40vh;
+		height: 60vh;
 		width: 100%;
 	}
 	.portfolio .dev {
@@ -226,9 +232,16 @@
 	}
 
 	.hire-me {
+		width: 100%;
 	}
+	
 	.about-me {
 		width: 100%;
+	}
+
+	.positifs p, .negatifs p {
+		padding: 0;
+		padding-left: 30px;
 	}
 }
 

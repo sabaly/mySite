@@ -29,6 +29,7 @@
 	$(".pbtn").click(function() {
 		location.replace('portfolio.html');
 	});
+	
 })(jQuery);
 
 function flagAnimation() {

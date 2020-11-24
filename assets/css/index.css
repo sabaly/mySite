@@ -62,7 +62,7 @@ p{
 	background: #00932C;
 	position: relative;
 	width: 32%;
-	animation: bandes 900ms forwards;
+	animation: bandes 1.5s forwards;
 }
 
 
@@ -72,37 +72,38 @@ p{
 	background: #FFDB30;
 	position: relative;
 	width: 36%;
-	display: grid;
-	align-content: center;
-	animation: bandes 900ms forwards;
+	animation: bandes 1.5s forwards;
 }
 
 
 .etoile {
+	position: relative;
+	top: 50%;
 	font-size: 100px;
 	color: #00932C;
-	animation: star 2s forwards infinite;
 }
 
-@keyframes star {
+/*@keyframes star {
 	0% {transform: scale(1) rotate(180deg);}
 	10%, 20% {transform: scale(1.5) rotate(-180deg);}
 	20%, 30% {transform: scale(1) rotate(180deg);}
 	30%, 40% {transform: scale(1.5) rotate(-180deg);}
 	40%, 50% {transform: scale(1) rotate(180deg);}
-}
+}*/
 
 .bande-rouge {
 	background: red;
 	position: relative;
 	width: 32%;
-	animation: bandes 900ms forwards;
+	animation: bandes 1.5s forwards;
 }
 @keyframes bandes {
-	0% { opacity: 0;}
-
-	100% {opacity: 1; }
+	0% { opacity: 0; transform: scale(1)}
+	50%, 60% { opacity: 1; transform: scale(1)}
+	80% {opacity: 0.5; transform: scale(2)}
+	100% {opacity: 0; transform: scale(3)}
 }
+
 
 
 /*
@@ -112,7 +113,7 @@ header a {
 	text-decoration: none;
 	color: #EE0E0E;
 }
-header a:hover {
+header a:hover{
 	text-decoration: none;
 	color: #484545;
 }
@@ -186,6 +187,17 @@ header {
 
 	.mobile-nav-menu *{
 		padding: 5px;
+	}
+	.mobile-nav-menu a {
+		color: #EE0E0E;
+	}
+	.mobile-nav-menu a.active {
+		text-shadow: 1px 1px #EE0E0E;
+		color: #484545;
+	}
+	.mobile-nav-menu a:hover{
+		text-decoration: none;
+		color: #484545;
 	}
 }
 
@@ -268,6 +280,10 @@ main {
 	bottom: 20%;
 }
 
+.introduction a:hover {
+	text-decoration: none;
+	color: #484545;
+}
 .scroll_down:hover{
 	animation: updown 1s forwards infinite;
 }
@@ -278,6 +294,15 @@ main {
 }
 
 @media(max-width: 768px ) {
+	.introduction {
+		padding: 5px;
+	}
+	.introduction h1 {
+		font-size: 30px;
+	}
+	.introduction p {
+		font-size: 12px;
+	}
 
 	.contact-me {
 		padding-left: 10px;
@@ -339,6 +364,7 @@ main {
 		width: 100%;	
 		padding: 20px;
 	}
+
 	.presentation {
 		overflow-y: visible;
 	}
@@ -387,12 +413,16 @@ main {
 @media(max-width: 768px ) {
 	.text-meAndMath {
 		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 	.presentation {
 		overflow-y: scroll;
 	}
 	.text-meAndMath p {
 		width: 100%;
+		display: block;
+		padding-top: 50%;
 	}
 
 }
@@ -472,7 +502,6 @@ footer h1 {
 
 .copyright {
 	margin: 30px;
-	font-size: 50px;
 }
 
 @media(max-width: 768px ) {
@@ -485,6 +514,6 @@ footer h1 {
 		padding-top: 50px;
 	}
 	.copyright {
-		font-style: 15px;
+		font-style: 10px;
 	}
 }

@@ -29,6 +29,40 @@
 	$(".pbtn").click(function() {
 		location.replace('portfolio.html');
 	});
+
+
+	$(document).on('click', '.nav-bar a, .mobile-nav-bar a, .scroll_down', function(e) {
+		e.preventDefault();
+
+		var target = $(this.hash);
+
+		if (target.length) {
+
+			var scrollto = target.offset().top;
+			var scrolled = 20;
+
+			  if ($('#header').length) {
+			  scrollto -= $('#header').outerHeight()
+
+			  if (!$('#header').hasClass('header-scrolled')) {
+				scrollto += scrolled;
+			  }
+			}
+
+			if ($(this).attr("href") == '#header') {
+			  scrollto = 0;
+			}
+
+			$('html, body').animate({
+			  scrollTop: scrollto
+			}, 1500, 'easeInOutExpo');
+
+			return false;
+		} else {
+			if($(this).attr('href') != undefined)
+				location.assign($(this).attr('href'));
+		}
+	});
 	
 })(jQuery);
 

@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 
 	<!--
 		Vendor
@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="header-content">
 			<div class="logo">
 				<h1>S@dmin</h1>
@@ -31,38 +31,40 @@
 			
 			<div class="nav-bar d-none d-lg-block">
 				<ul>
-					<li><a href="" class="active">Accueil</a></li>
-					<li><a href="">Cv</a></li>
-					<li><a>Services</a></li>
-					<li>A propos</li>
+					<li><a href="#introduction" class="active">Accueil</a></li>
+					<li><a href="cv.html">Cv</a></li>
+					<li><a href="#projects">Projets</a></li>
+					<li><a href="#about">A propos</a></li>
 				</ul>
 			</div>
 		</div>
 	</header>
+
 	<div class="mobile-nav-bar d-lg-none">
 		<ul class="mobile-nav-menu d-lg-none">
-			<li><a href="" class="active">Accueil</a></li>
-			<li><a href="">Cv</a></li>
-			<li><a>Services</a></li>
-			<li>A propos</li>
+			<li><a href="#introduction" class="active">Accueil</a></li>
+			<li><a href="cv.html">Cv</a></li>
+			<li><a href="#projects">Projets</a></li>
+			<li><a href="#about">A propos</a></li>
 		</ul>
 	</div>
+
 	<main>
-		<div class="banner">
+		<div class="banner" id="introduction">
 			<div class="introduction">
 				<h1>Concepteur d'applications web dynamiques et sécurisées</h1>
 				<p>Vous êtes une PME, association ou un individuel
 					et vous voulez une application pro.</p>
 				<button class="contact-me">Contactez-moi</button>
 				
-				<i class="icofont-scroll-bubble-down scroll_down"></i>
+				<a href="#about" class="scroll_down"><i class="icofont-scroll-bubble-down"></i></a>
 			</div>
 			<div class="image d-none d-lg-block">
 				<img src="assets/img/sabaly1.jpg"/>
 			</div>
 		</div>
 
-		<div class="presentation">
+		<div class="presentation" id="about">
 			<div class="text-presentation">
 				<h1>Présentation</h1>
 				<p>
@@ -95,9 +97,10 @@
 			
 		</div>
 
-		<div class="services">
-			<h1>Services</h1>
-			<div class="myServices d-lg-block d-none">
+		<div class="services" id="projects">
+			<h1>Projets</h1>
+			<p>Site en construction</p>
+			<div class="myServices d-none">
 				<div class="dev">
 					<h2>Conception de site web</h2>
 					wordpress <br> Symfony <br> Html&CSS <br> PHP
@@ -124,16 +127,16 @@
 		<div class="contacts">
 			<h1>Contacts</h1>
 			<div>
-				<a href=""><span>f</span></a>
-				<a href=""><span>In</span></a>
-				<a href=""><span>g</span></a>
-				<a href=""><span>w</span></a>
+				<a href="https://web.facebook.com/thiernomamoudou.sabaly/" title="facebook"><span>f</span></a>
+				<a href="https://www.linkedin.com/in/thierno-sabaly-642846151/" title="linkedin"><span>In</span></a>
+				<a href="mailto:tmssam47@gmail.com" title="gmail"><span>g</span></a>
+				<a href="https://wa.me/+221785378991?text='Salut'" title="whatsapp"><span>w</span></a>
 			</div>
 		</div>
-		<div class="copyright"><sup>&copy;</sup>S@dmin, 2020</div>
+		<div class="copyright">
+			&copy; <strong><span>copyright</span></strong>-2020, tmssam47@gmail.com <br> Design by <strong>S@dmin</strong>
+		</div>
 	</footer>
-	
-
 
 	<script src="assets/vendor/jquery/jquery.min.js"></script>
 	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
@@ -141,6 +144,6 @@
 	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
 	<script src="assets/vendor/jquery.color/jquery.color.js"></script>
 
-	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

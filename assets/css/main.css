@@ -118,7 +118,6 @@ header a:hover{
 	color: #484545;
 }
 header {
-	/*filter: invert(1);*/
 	padding:0;
 	text-align: center;
 }
@@ -173,7 +172,10 @@ header {
 }
 
 @media(max-width: 768px ) {
-		
+	.header-content {
+		height: 12vh;
+	}
+
 	.mobile-nav-bar {
 		width: 100%;
 		position: relative;
@@ -296,7 +298,7 @@ main {
 @media(max-width: 768px ) {
 	.introduction {
 		padding: 5px;
-		margin: 0;
+		padding-top: 20px;
 	}
 	.introduction h1 {
 		font-size: 30px;
@@ -313,13 +315,13 @@ main {
 		width: 70%;
 	}
 	.introduction .scroll_down {
-		bottom: 15%;
+		bottom: 35%;
 		left: 40%;
 		animation: updown 1s forwards infinite;
 	}
 	@keyframes updown {
-		from { bottom: 16%; }
-		to {bottom: 15%; }
+		from { bottom: 36%; }
+		to {bottom: 35%; }
 	}
 
 }

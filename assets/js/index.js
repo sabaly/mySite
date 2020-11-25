@@ -6,12 +6,12 @@
 	/*
 		Actions from potfolio
 	*/
-	$(".mobile-nav-bar").hide();
 	$(".toggleMenu").click(function() {
+		$(".mobile-nav-bar").removeClass("d-none").hide();
 		$(".mobile-nav-bar").slideDown(1500);
 
 		if($(this).hasClass('icofont-close')) {
-			$(".mobile-nav-bar").slideUp(1500);
+			$(".mobile-nav-bar").slideUp(2000).addClass("d-none");
 			$(this).toggleClass("icofont-close icofont-navigation-menu");
 		}else {
 			$(this).toggleClass("icofont-navigation-menu icofont-close");

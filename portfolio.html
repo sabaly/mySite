@@ -8,7 +8,7 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	<!--
 		Vendor
@@ -40,7 +40,7 @@
 		</div>
 	</header>
 
-	<div class="mobile-nav-bar d-lg-none">
+	<div class="mobile-nav-bar d-none">
 		<ul class="mobile-nav-menu d-lg-none">
 			<li><a href="#introduction" class="active">Accueil</a></li>
 			<li><a href="cv.html">Cv</a></li>
@@ -97,22 +97,70 @@
 			
 		</div>
 
-		<div class="services" id="projects">
+		<div class="projects" id="projects">
 			<h1>Projets</h1>
-			<p>Site en construction</p>
-			<div class="myServices d-none">
-				<div class="dev">
-					<h2>Conception de site web</h2>
-					wordpress <br> Symfony <br> Html&CSS <br> PHP
+			<p>
+				<a href="https://github.com/sabaly" class="github">
+					<i class="icofont-github rounded rounded-circle"></i> Mon dépôt github
+				</a>
+			</p>
+			
+			<div class="myProjects">
+				<div class="project">
+					<div class="project-wrap">
+						<figure>
+							<img src="assets/img/maintainLevel.PNG" class="img-fluid" alt="">
+							<p href="https://sabaly.github.io/Gallery/Views" data-gall="projectsGallery" class="project-desc venobox" title="Visiter">
+								pro
+							</p>
+						</figure>
+						<div class="project-info">
+							<h4><a href="portfolio-details.php">Maintain Level</a></h4>
+							<p>
+								<strong><i class="icofont-home"></i></strong> : En local<br/>
+								<strong>Téchnologie</strong> : PHP7/Bootstrap/JQuery/AJAX
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="integration">
-					<h2>Intégration web</h2>
-					HTML <br> CSS <br> Javascript
+
+				<div class="project">
+					<div class="project-wrap">
+						<figure>
+							<img src="assets/img/GallerieEnLigne.PNG" class="img-fluid" alt="">
+							<p data-gall="projectsGallery" class="project-desc venobox">
+								La gallerie en ligne
+							</p>
+						</figure>
+						<div class="project-info">
+							<h4><a href="portfolio-details.php">Gallerie en ligne</a></h4>
+							<p>
+								<strong>Lien</strong> : <a href="https://sabaly.github.io/Gallery/Views" target="_blank">https://sabaly.github.io/Gallery/Views</a><br/>
+								<strong>Téchnologie</strong> : PHP7/Bootstrap/JQuery/AJAX
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="courses">
-					<h2>Cours à domicile</h2>
-					Mathématiques <br> Programmation <br> SQL <br> Linux
+
+				<div class="project">
+					<div class="project-wrap">
+						<figure>
+							<img src="assets/img/rvClinique.PNG" class="img-fluid" alt="">
+							<p href="https://sabaly.github.io/Gallery/Views" data-gall="projectsGallery" class="project-desc venobox" title="Visiter">
+								<i class="icofont-eye rounded rounded-circle"></i>
+							</p>
+						</figure>
+						<div class="project-info">
+							<h4><a href="">Rendez-vous Clinique</a></h4>
+							<p>
+								<strong><i class="icofont-folder"></i></strong> : Projet de fin d'année licence 1<br/>
+								<strong>Téchnologie</strong> : langage C/SDL
+							</p>
+						</div>
+					</div>
 				</div>
+
+
 			</div>
 		</div>
 	</main>
@@ -144,6 +192,6 @@
 	<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
 	<script src="assets/vendor/jquery.color/jquery.color.js"></script>
 
-	<script type="text/javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 </html>

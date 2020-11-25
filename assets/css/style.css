@@ -296,6 +296,7 @@ main {
 @media(max-width: 768px ) {
 	.introduction {
 		padding: 5px;
+		margin: 0;
 	}
 	.introduction h1 {
 		font-size: 30px;
@@ -320,8 +321,6 @@ main {
 		from { bottom: 16%; }
 		to {bottom: 15%; }
 	}
-
-	
 
 }
 
@@ -428,31 +427,109 @@ main {
 }
 
 
-.services {
+.projects {
 	text-align: center;
-	margin: 20px;
-	height: 50vh;
+	margin: 25px;
 }
-.services h1 {
+
+.projects a {
+	text-decoration: none;
+	color: #EE0E0E;
+}
+.projects a:hover {
+	text-decoration: none;
+	color: #484545;
+}
+.github:hover i {
+	background: #EE0E0E;
+	color: #fff;
+}
+
+.projects h1 {
 	color: #484545;
 	margin: 20px;
 }
-.myServices {
+.icofont-github {
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #EE0E0E;
+}
+.myProjects {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
+.project-wrap {
+	box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  	transition: 0.3s;
+	background: #ccc;
+}
+.project-wrap:hover {
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+.project {
+	position: relative;
+	width: 30%;
+  	height: 360px;
+  	overflow: hidden;
+}
 
-.dev, .integration, .courses {
-	border: 1px solid #EE0E0E;
-	border-radius: 50px;
-	padding: 20px;
-	height: 30vh;
-	color: #484545;
+.project figure {
+	background: #000;
+	overflow: hidden;
+	height: 240px;
+	position: relative;
+	border-radius: 4px 4px 0 0;
+	margin: 0;
 }
-.myServices h2 {
-	color: #EE0E0E;
+.project figure:hover img {
+	opacity: 0.4;
+	transition: .4s;
 }
+
+.project figure .project-desc {
+	position: absolute;
+	display: flex;
+	opacity: 0;
+	line-height: 0;
+	width: 60%;
+	height: 100%;
+	background: transparent;
+	color: #fff;
+	transition: all .2s linear;
+	font-size: 15px;
+}
+.project figure .project-desc i {
+	color: #fff;
+	background: transparent;
+}
+.project figure .project-desc:hover {
+	background: transparent;
+}
+  
+  
+.project figure .project-desc{
+	left: 25%;
+	top: 25%;
+}
+.project figure:hover .project-desc{
+	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.project {
+		width: 80%;
+		font-size: 10px;
+	}
+	.project figure {
+		height: 120px;
+	}
+
+	.project-info {
+		margin-top: 10px;
+	}
+}
+
 
 footer {
 	font-family: 'Nerko One', cursive, sans-serif;

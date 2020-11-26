@@ -296,13 +296,10 @@ main {
 }
 
 @media(max-width: 768px ) {
-	.banner {
-		align-items: none;
-		background: #000;
-	}
+	
 	.introduction {
+		display: block;
 		padding: 5px;
-		padding-top: 20px;
 	}
 	.introduction h1 {
 		font-size: 30px;
@@ -319,13 +316,13 @@ main {
 		width: 70%;
 	}
 	.introduction .scroll_down {
-		bottom: 20%;
+		bottom: 17%;
 		left: 40%;
 		animation: updown 1s forwards infinite;
 	}
 	@keyframes updown {
-		from { bottom: 21%; }
-		to {bottom: 20%; }
+		from { bottom: 18%; }
+		to {bottom: 17%; }
 	}
 
 }

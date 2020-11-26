@@ -172,6 +172,10 @@ header {
 }
 
 @media(max-width: 768px ) {
+	#header {
+		position: sticky;
+		top: 20px;
+	}
 	.header-content {
 		height: 15vh;
 	}

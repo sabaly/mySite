@@ -296,6 +296,10 @@ main {
 }
 
 @media(max-width: 768px ) {
+	.banner {
+		align-items: none;
+		background: #000;
+	}
 	.introduction {
 		padding: 5px;
 		padding-top: 20px;

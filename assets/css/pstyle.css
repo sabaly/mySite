@@ -296,6 +296,9 @@ main {
 }
 
 @media(max-width: 768px ) {
+	.banner {
+		background: #000;
+	}
 	.introduction {
 		padding: 5px;
 		padding-top: 20px;
